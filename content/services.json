@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Fractional CTO",
+    "outcome": "Align tech with KPIs; ship decisions, not decks.",
+    "process": ["Discovery", "Architecture", "90-day roadmap"],
+    "deliverables": ["Architecture doc", "Team plan", "Risk register"]
+  },
+  {
+    "name": "AI Product Strategy",
+    "outcome": "From prompt to production with evals & guardrails.",
+    "process": ["Use-case scoring", "MVP", "Evaluation harness"],
+    "deliverables": ["MVP", "Evals dashboard", "Cost/latency budget"]
+  },
+  {
+    "name": "Platform & Cloud Architecture",
+    "outcome": "Scale reliably with observability & IaC.",
+    "process": ["Audit", "IaC", "SLOs"],
+    "deliverables": ["Infra plan", "IaC repo", "SLOs"]
+  },
+  {
+    "name": "Compliance & VAPT Remediation",
+    "outcome": "Ship safely (GDPR/ISO/VAPT).",
+    "process": ["Gap analysis", "Fix plan", "Proof"],
+    "deliverables": ["Policy set", "JIRA backlog", "Evidence pack"]
+  },
+  {
+    "name": "Team Coaching",
+    "outcome": "High-velocity teams with real feedback loops.",
+    "process": ["Rituals", "Standards", "Playbooks"],
+    "deliverables": ["Engineering handbook", "Review checklists"]
+  },
+  {
+    "name": "Web & Mobile App Development",
+    "outcome": "Cross-platform apps that scale from MVP to enterprise.",
+    "process": ["Architecture", "Development", "Testing", "Deployment"],
+    "deliverables": ["Web app", "Mobile app", "API", "Documentation"]
+  }
+]

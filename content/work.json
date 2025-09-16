@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "ai-ats-time-to-hire",
+    "title": "AI-powered ATS: 50% reduction in time-to-hire",
+    "role": "Chief Technology Officer",
+    "period": "2019–Now",
+    "client_or_org": "Noble House",
+    "summary": "Built a modular ATS with resume parsing, ranking, and analytics. Added eval harness and hiring funnels to halve time-to-hire.",
+    "outcomes": ["50% ↓ time-to-hire", "Improved candidate NPS", "Realtime funnel analytics"],
+    "stack": ["Python", ".NET Core", "React", "PostgreSQL", "Azure/AWS"],
+    "heroMetric": "50% ↓ time-to-hire",
+    "images": ["/placeholders/ats-1.png", "/placeholders/ats-2.png"]
+  },
+  {
+    "slug": "blockchain-agri-traceability",
+    "title": "Blockchain traceability in agriculture: 30% fraud reduction",
+    "role": "CTO",
+    "period": "2018–2019",
+    "client_or_org": "National initiative (Korea)",
+    "summary": "Designed and deployed an Ethereum/Hyperledger-based supply-chain ledger for crop traceability.",
+    "outcomes": ["30% ↓ fraud", "Improved stakeholder trust"],
+    "stack": ["Ethereum", "Hyperledger", "Solidity", "Node.js"],
+    "heroMetric": "30% ↓ fraud",
+    "images": ["/placeholders/agri-1.png"]
+  },
+  {
+    "slug": "cloud-migration-scale",
+    "title": "Zero-downtime cloud migration: 60% scalability boost",
+    "role": "CTO",
+    "period": "2019–2021",
+    "client_or_org": "Enterprise systems",
+    "summary": "Lift-and-optimize to AWS/Azure with autoscaling, IaC, and observability.",
+    "outcomes": ["60% ↑ scalability", "Zero downtime cutover", "Lower infra cost"],
+    "stack": ["AWS", "Azure", "Kubernetes", "Terraform", "Grafana"],
+    "heroMetric": "60% ↑ scalability",
+    "images": ["/placeholders/cloud-1.png"]
+  },
+  {
+    "slug": "digital-health-ecosystem",
+    "title": "Digital health ecosystem: patient–doctor–technician apps",
+    "role": "CTO",
+    "period": "2017–2019",
+    "client_or_org": "South Korea",
+    "summary": "Telemedicine portals, patient apps, EHR integrations; streamlined care delivery.",
+    "outcomes": ["Faster triage", "Better continuity of care"],
+    "stack": ["Android", "React", "Node", "PostgreSQL"],
+    "images": ["/placeholders/health-1.png"]
+  },
+  {
+    "slug": "iot-fitness-saudi",
+    "title": "IoT fitness stack for public sector (KSA)",
+    "role": "Tech Lead",
+    "summary": "Device firmware + mobile apps + analytics pipeline to increase engagement.",
+    "outcomes": ["Higher user engagement", "Actionable insights"],
+    "stack": ["IoT", "Android", "Python", "BI"],
+    "images": ["/placeholders/iot-1.png"]
+  },
+  {
+    "slug": "ecommerce-40pc-growth",
+    "title": "Custom e-commerce: +40% sales in 6 months",
+    "role": "CTO",
+    "summary": "Built a scalable commerce stack with performance tuning and CRO testing.",
+    "outcomes": ["40% ↑ sales", "Faster pages", "Better checkout conversion"],
+    "stack": ["React", "Node", "PostgreSQL"],
+    "images": ["/placeholders/ecom-1.png"]
+  }
+]

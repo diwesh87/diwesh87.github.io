@@ -1,0 +1,131 @@
+---
+title: "Skills & Expertise"
+---
+
+import { Badge } from "@/components/ui/badge"
+import { Card, CardHeader, CardContent } from "@/components/ui/card"
+
+# Skills & Expertise
+
+<div className="flex flex-wrap gap-2 mb-6">
+  {["Fractional CTO","AI Product Strategy","Platform Architecture","Cloud & DevOps","Compliance & VAPT","Team Coaching"].map(k => (
+    <Badge key={k} className="bg-brand-soft text-brand">{k}</Badge>
+  ))}
+</div>
+
+Building outcomes, not artifacts. I focus on small, end-to-end loops—**ingest → infer → evaluate → iterate**—with guardrails and observability from day one.
+
+## Core Expertise
+
+<Card className="mb-6">
+  <CardHeader className="pb-2">Fractional CTO</CardHeader>
+  <CardContent>
+    <p className="text-muted-foreground mb-3">Align tech with KPIs; ship decisions, not decks.</p>
+    <ul className="list-disc pl-5 space-y-1">
+      <li>90-day KPI roadmap; measurable wins</li>
+      <li>Unblock hiring and vendor choices with auditable criteria</li>
+      <li>Rituals that raise velocity (PRDs, ADRs, design reviews)</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-6">
+  <CardHeader className="pb-2">AI Product Strategy</CardHeader>
+  <CardContent>
+    <p className="text-muted-foreground mb-3">From prompt to production with evals & guardrails.</p>
+    <ul className="list-disc pl-5 space-y-1">
+      <li>Use-case scoring with cost/latency budgets</li>
+      <li>Evaluation harness (quality, bias, drift) + HITL flows</li>
+      <li>RAG/agents with caching & batching to control spend</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-6">
+  <CardHeader className="pb-2">Platform Architecture</CardHeader>
+  <CardContent>
+    <p className="text-muted-foreground mb-3">Modular services, clear SLAs, cost/perf budgets.</p>
+    <ul className="list-disc pl-5 space-y-1">
+      <li>Domain boundaries that map to teams</li>
+      <li>Contracts & data flows designed for change</li>
+      <li>Secure-by-default interfaces</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-6">
+  <CardHeader className="pb-2">Cloud & DevOps</CardHeader>
+  <CardContent>
+    <p className="text-muted-foreground mb-3">Zero-downtime moves, IaC, and pragmatic reliability.</p>
+    <ul className="list-disc pl-5 space-y-1">
+      <li>Blue/green or canary with automated rollbacks</li>
+      <li>Terraform/IaC baselines; cost guardrails and alerts</li>
+      <li>SLIs/SLOs, dashboards, on-call playbooks</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-6">
+  <CardHeader className="pb-2">Compliance & VAPT</CardHeader>
+  <CardContent>
+    <p className="text-muted-foreground mb-3">Close gaps fast—prove it with evidence packs.</p>
+    <ul className="list-disc pl-5 space-y-1">
+      <li>ISO/GDPR mapping → fixes → evidence collection</li>
+      <li>Threat modeling & remediation backlogs</li>
+      <li>Privacy by design (DPIA, retention, consent)</li>
+    </ul>
+  </CardContent>
+</Card>
+
+<Card className="mb-8">
+  <CardHeader className="pb-2">Team Coaching</CardHeader>
+  <CardContent>
+    <p className="text-muted-foreground mb-3">Rituals and feedback loops that raise velocity.</p>
+    <ul className="list-disc pl-5 space-y-1">
+      <li>Engineer handbook, review checklists, design clinics</li>
+      <li>Definition of Ready/Done that actually sticks</li>
+      <li>Career ladders that retain talent</li>
+    </ul>
+  </CardContent>
+</Card>
+
+## Supporting Skills
+
+<div className="grid md:grid-cols-2 gap-4">
+  <Card>
+    <CardHeader className="pb-2">AI & LLMOps</CardHeader>
+    <CardContent className="text-sm text-muted-foreground">
+      RAG architectures, prompt versioning/testing, eval harnesses, hallucination/bias checks, agent tool-use, caching & batching.
+    </CardContent>
+  </Card>
+  <Card>
+    <CardHeader className="pb-2">Languages & Frameworks</CardHeader>
+    <CardContent className="text-sm text-muted-foreground">
+      Python, .NET/Core, Node.js, React/Next.js, TypeScript.
+    </CardContent>
+  </Card>
+  <Card>
+    <CardHeader className="pb-2">Cloud & Infra</CardHeader>
+    <CardContent className="text-sm text-muted-foreground">
+      AWS (EKS/RDS/S3), Azure (AKS/Cosmos), Kubernetes, Terraform, CI/CD (GitHub Actions).
+    </CardContent>
+  </Card>
+  <Card>
+    <CardHeader className="pb-2">Data & Observability</CardHeader>
+    <CardContent className="text-sm text-muted-foreground">
+      PostgreSQL, Redis, Grafana/Prometheus, ELK/Opensearch, analytics pipelines.
+    </CardContent>
+  </Card>
+  <Card>
+    <CardHeader className="pb-2">Security & Compliance</CardHeader>
+    <CardContent className="text-sm text-muted-foreground">
+      OAuth2/OIDC & SSO, secrets management, ISO 27001, GDPR, VAPT remediation.
+    </CardContent>
+  </Card>
+  <Card>
+    <CardHeader className="pb-2">Communication</CardHeader>
+    <CardContent className="text-sm text-muted-foreground">
+      Executive storytelling, docs-as-code, stakeholder alignment, workshops & training.
+    </CardContent>
+  </Card>
+</div>

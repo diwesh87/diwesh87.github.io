@@ -1,0 +1,17 @@
+[
+  { 
+    "slug": "mitigating-bias-recruitment", 
+    "title": "Mitigating Bias in AI-Powered Recruitment", 
+    "abstract": "Techniques & evaluations to reduce bias in ranking & screening." 
+  },
+  { 
+    "slug": "talent-pools-to-talent-graphs", 
+    "title": "From Talent Pools to Talent Graphs", 
+    "abstract": "Graph-driven discoverability in closed consultant networks." 
+  },
+  { 
+    "slug": "agentic-workflows-senior-living", 
+    "title": "Agentic Workflows in Senior-Living Tech", 
+    "abstract": "Voice & AI agents in resident services." 
+  }
+]

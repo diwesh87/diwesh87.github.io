@@ -1,0 +1,27 @@
+{
+  "name": "Diwesh Saxena",
+  "title": "CTO & AI Platform Architect",
+  "location": "Delhi–NCR, India",
+  "summary": "16+ years building scalable platforms and AI-augmented workflows across HRTech, healthcare, IoT, and public sector. I align tech strategy to business outcomes, build high-velocity teams, and turn proofs into production.",
+  "languages": ["English (C2)", "Hindi (C2)", "Korean (C1)"],
+  "keywords": ["Fractional CTO", "AI Product Strategy", "Platform Architecture", "Cloud & DevOps", "Compliance & VAPT", "Team Coaching"],
+  "social": { 
+    "linkedin": "https://www.linkedin.com/in/diweshsaxena/"
+  },
+  "cta": { 
+    "primary": "Book a 30-min Discovery Call", 
+    "secondary": "View Case Studies" 
+  },
+  "heroHeadline": "CTO & AI Platform Architect turning ideas into measurable outcomes.",
+  "heroSubheadline": "16+ years shipping scalable platforms, AI-augmented workflows, and cloud systems across HRTech, healthcare, IoT, and public sector.",
+  "metrics": [
+    { "value": "50%", "label": "↓ time-to-hire with AI ATS", "description": "Reduced hiring time through intelligent resume parsing and ranking" },
+    { "value": "30%", "label": "↓ fraud via blockchain traceability", "description": "Decreased agricultural fraud with blockchain supply chain" },
+    { "value": "60%", "label": "↑ scalability after cloud migration", "description": "Improved system capacity with zero-downtime cloud migration" }
+  ],
+  "proof": {
+    "years": "16+",
+    "countries": "India/Korea",
+    "sectors": "HRTech, Health, IoT"
+  }
+}

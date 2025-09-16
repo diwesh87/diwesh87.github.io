@@ -1,0 +1,72 @@
+---
+title: "AI-Powered ATS: 50% reduction in time-to-hire"
+slug: "ai-ats-time-to-hire"
+role: "Chief Technology Officer"
+organization: "Noble House"
+timeframe: "2019 — Present"
+heroMetric: "50% ↓ time-to-hire"
+summary: "Built a modular, AI-augmented Applicant Tracking System with parsing, ranking, funnel analytics, and evaluation harness to turn hiring into a predictable machine."
+stack:
+  - Python
+  - .NET Core
+  - React
+  - PostgreSQL
+  - Azure/AWS
+outcomes:
+  - "50% reduction in time-to-hire (resume claim)"
+  - "Improved candidate NPS via transparent, faster stages"
+  - "Live funnel analytics for recruiters and leadership"
+---
+
+import { Callout } from "@/components/mdx/Callout"
+
+<Callout intent="success">Outcome: **50% ↓ time-to-hire** with an AI-augmented ATS.</Callout>
+
+## Context
+Noble House needed hiring to move at the speed of business. Legacy tools created latency and blind spots across sourcing, screening, and scheduling. We set a singular KPI: **cut time-to-hire by half** while increasing candidate satisfaction. *(Metric sourced from my resume.)*
+
+## Problem
+- Recruiters were juggling multiple systems; data-entry and follow-ups slowed offers.
+- Screening lacked consistent, fair scoring; interviews clashed; funnel drop-off was invisible.
+
+## Constraints
+- Integrate with existing job boards/HRIS.
+- Preserve auditability and reduce bias; support remote-first teams.
+
+## My role & team
+I served as **CTO and architect**, leading cross-functional squads (product, data, platform, QA). I defined the KPI model, architecture, and an evaluation harness for ranking quality.
+
+## Approach
+1. **Discovery & KPI model** — mapped current funnel and baseline SLAs.  
+2. **Data pipeline** — resume ingestion and canonical candidate profile.  
+3. **Ranking & rules** — skill signals, recency, constraints; human-oversight loops.  
+4. **Scheduling & comms** — automated calendars, SMS/email nudges.  
+5. **Funnel analytics** — time-in-stage, drop-off, and alerting.  
+6. **Evals & guardrails** — weekly tests for precision/cost/latency; bias checks.
+
+## Architecture (at a glance)
+Ingestion (parsers/webhooks) → Profile Store (PostgreSQL) → Ranker API (Python) → Orchestrator (.NET) → UI (React) → BI (funnel dashboards) → Notification service (email/SMS).
+
+## What we built
+- **Resume parsing + profile unification** with manual overrides.  
+- **Ranking service** combining rules + learned signals; **HITL** review queues.  
+- **One-click scheduling** with calendar sync and candidate preferences.  
+- **Funnel dashboards** with SLA alerts; **offer workflow** with approvals.
+
+## Results
+- **50% ↓ time-to-hire** and faster recruiter response times.  
+- Higher candidate satisfaction; fewer drop-offs at screening/interview.  
+- Reliable reporting for leadership and clients.
+
+## Lessons
+- Data hygiene beats model cleverness.  
+- Guardrails + evaluation harness keep models honest as volume grows.
+
+## Next
+- Integrate structured interview rubrics; expand fairness audits; add sourcing marketplace.
+
+## CTA
+Want a deep dive into the evaluation harness or ranking rules? **[Book a 30-min call](https://calendly.com/diweshsaxena/30min)**.
+
+
+Source for headline metric and ATS ownership: 

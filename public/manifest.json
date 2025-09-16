@@ -1,0 +1,27 @@
+{
+  "name": "Diwesh Saxena - CTO & AI Platform Architect",
+  "short_name": "Diwesh Saxena",
+  "description": "16+ years building scalable platforms and AI-augmented workflows across HRTech, healthcare, IoT, and public sector.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F3EF",
+  "theme_color": "#10B9AE",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "technology"],
+  "lang": "en",
+  "dir": "ltr"
+}

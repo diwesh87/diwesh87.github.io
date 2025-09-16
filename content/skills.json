@@ -1,0 +1,184 @@
+{
+  "keywords": [
+    "Fractional CTO",
+    "AI Product Strategy",
+    "Platform Architecture",
+    "Cloud & DevOps",
+    "Compliance & VAPT",
+    "Team Coaching",
+    "Web & Mobile Development"
+  ],
+  "core": [
+    {
+      "name": "Fractional CTO",
+      "oneLiner": "Align tech with KPIs; ship decisions, not decks.",
+      "outcomes": [
+        "Define a 90-day roadmap tied to revenue, cost, or reliability KPIs",
+        "Stand up the right rituals (PRDs, ADRs, design reviews) to raise velocity",
+        "Unblock hiring and vendor choices with clear, auditable criteria"
+      ],
+      "tools": ["ADR templates", "KPI model", "Risk register", "Roadmap & OKRs"]
+    },
+    {
+      "name": "AI Product Strategy",
+      "oneLiner": "From prompt to production with evals & guardrails.",
+      "outcomes": [
+        "Use-case scoring and cost/latency budgets",
+        "Evaluation harness (accuracy, bias, hallucination, drift)",
+        "Human-in-the-loop, red-team tests, rollback playbook"
+      ],
+      "tools": ["RAG pipelines", "Vector DBs", "Prompt/versioning", "A/B eval dashboards"]
+    },
+    {
+      "name": "Platform Architecture",
+      "oneLiner": "Design modular services with clear SLAs and cost/perf budgets.",
+      "outcomes": [
+        "Domain boundaries that map to teams and roadmaps",
+        "Observability-first services with golden signals and SLOs",
+        "Secure-by-default interfaces and data contracts"
+      ],
+      "tools": ["ADR/DDD", "REST/GraphQL", "gRPC", "Async queues", "API gateways"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "oneLiner": "Zero-downtime moves, IaC, and pragmatic reliability.",
+      "outcomes": [
+        "Blue/green or canary releases with automated rollbacks",
+        "Terraform/IaC baselines; cost guardrails and alerts",
+        "Incident response playbooks and postmortems"
+      ],
+      "tools": ["AWS/Azure", "Kubernetes", "Terraform", "Grafana/Prometheus", "ELK"]
+    },
+    {
+      "name": "Compliance & VAPT",
+      "oneLiner": "Close gaps fast—prove it with evidence packs.",
+      "outcomes": [
+        "Map controls (ISO/GDPR) → implement → collect evidence",
+        "Threat modeling and VAPT remediation backlogs",
+        "Data privacy by design (DPIA, retention, consent)"
+      ],
+      "tools": ["ISO 27001 controls", "GDPR DPIA", "SIEM alerts", "Jira evidence packs"]
+    },
+    {
+      "name": "Team Coaching",
+      "oneLiner": "Rituals, standards, and feedback loops that raise velocity.",
+      "outcomes": [
+        "Pair reviews and design clinics; fewer reworks",
+        "Definition of Ready/Done that sticks",
+        "Career ladders and growth paths that retain talent"
+      ],
+      "tools": ["Engg handbook", "Code review checklists", "Blameless postmortems"]
+    },
+    {
+      "name": "Web & Mobile App Development",
+      "oneLiner": "Cross-platform apps that scale from MVP to enterprise.",
+      "outcomes": [
+        "Responsive web apps with modern frameworks (React, Vue, Angular)",
+        "Native and cross-platform mobile apps (React Native, Flutter)",
+        "Progressive Web Apps (PWA) for seamless user experience",
+        "API-first architecture with robust backend services"
+      ],
+      "tools": ["React/Next.js", "React Native", "Flutter", "Node.js", "TypeScript", "REST/GraphQL APIs"]
+    }
+  ],
+  "supporting": {
+    "AI/LLMOps": [
+      "RAG architectures",
+      "Prompt versioning & testing",
+      "Eval harnesses (quality/latency/cost)",
+      "Hallucination/bias checks",
+      "Agents with tool-use & timeouts",
+      "Caching & batching to control spend"
+    ],
+    "LanguagesFrameworks": [
+      "Python",
+      ".NET/Core",
+      "Node.js",
+      "React/Next.js",
+      "TypeScript",
+      "JavaScript/ES6+",
+      "C#",
+      "Java",
+      "Go",
+      "Rust"
+    ],
+    "WebTechnologies": [
+      "React/Next.js",
+      "Vue.js/Nuxt.js",
+      "Angular",
+      "Svelte/SvelteKit",
+      "HTML5/CSS3",
+      "Tailwind CSS",
+      "Sass/SCSS",
+      "Webpack/Vite",
+      "PWA",
+      "WebAssembly"
+    ],
+    "MobileTechnologies": [
+      "React Native",
+      "Flutter",
+      "Ionic",
+      "Xamarin",
+      "Swift (iOS)",
+      "Kotlin (Android)",
+      "Expo",
+      "Cordova/PhoneGap",
+      "Native iOS/Android",
+      "Cross-platform development"
+    ],
+    "HybridTechnologies": [
+      "Electron",
+      "Tauri",
+      "Capacitor",
+      "Cordova",
+      "Ionic",
+      "React Native Web",
+      "Progressive Web Apps",
+      "Desktop app development",
+      "Cross-platform solutions"
+    ],
+    "AITechnologies": [
+      "OpenAI GPT/Claude",
+      "LangChain",
+      "Vector Databases",
+      "RAG (Retrieval Augmented Generation)",
+      "Machine Learning",
+      "Deep Learning",
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "Computer Vision",
+      "NLP",
+      "LLM Fine-tuning",
+      "AI Agents",
+      "Prompt Engineering"
+    ],
+    "CloudInfra": [
+      "AWS (EKS, RDS, S3, CloudFront)",
+      "Azure (AKS, App Service, Cosmos)",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD (GitHub Actions)"
+    ],
+    "DataObservability": [
+      "PostgreSQL",
+      "Redis",
+      "Grafana/Prometheus",
+      "ELK/Opensearch",
+      "Feature stores & analytics pipelines"
+    ],
+    "SecurityCompliance": [
+      "OAuth2/OIDC, SSO",
+      "Secrets management",
+      "ISO 27001",
+      "GDPR",
+      "VAPT remediation"
+    ],
+    "Communication": [
+      "Executive storytelling",
+      "Docs-as-code",
+      "Stakeholder alignment",
+      "Workshops & training"
+    ]
+  }
+}

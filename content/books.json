@@ -1,0 +1,23 @@
+[
+  { 
+    "slug": "colors-of-pride", 
+    "title": "Colors of Pride", 
+    "type": "Non-fiction", 
+    "blurb": "Stories of love, struggle, and acceptance in India.", 
+    "cover": "/placeholders/book-1.png" 
+  },
+  { 
+    "slug": "kimchi-capers", 
+    "title": "Kimchi Capers", 
+    "type": "Fiction", 
+    "blurb": "Tales inspired by years in South Korea.", 
+    "cover": "/placeholders/book-2.png" 
+  },
+  { 
+    "slug": "downtime-disasters", 
+    "title": "Downtime Disasters", 
+    "type": "Non-fiction", 
+    "blurb": "Real engineering outages and what they teach.", 
+    "cover": "/placeholders/book-3.png" 
+  }
+]
