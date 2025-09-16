@@ -4,20 +4,23 @@
     "title": "Colors of Pride", 
     "type": "Non-fiction", 
     "blurb": "Stories of love, struggle, and acceptance in India.", 
-    "cover": "/placeholders/book-1.png" 
+    "cover": "/placeholders/book-1.png",
+    "amazonUrl": "https://www.amazon.in/Colors-Pride-Stories-Struggle-Acceptance/dp/B0DMHTCWHX"
   },
   { 
     "slug": "kimchi-capers", 
     "title": "Kimchi Capers", 
     "type": "Fiction", 
     "blurb": "Tales inspired by years in South Korea.", 
-    "cover": "/placeholders/book-2.png" 
+    "cover": "/placeholders/book-2.png",
+    "amazonUrl": "https://www.amazon.in/Kimchi-Capers-Crunchy-Confessions-Korea-ebook/dp/B0D788KCB7"
   },
   { 
     "slug": "downtime-disasters", 
     "title": "Downtime Disasters", 
     "type": "Non-fiction", 
     "blurb": "Real engineering outages and what they teach.", 
-    "cover": "/placeholders/book-3.png" 
+    "cover": "/placeholders/book-3.png",
+    "amazonUrl": "https://www.amazon.in/Downtime-Disasters-Everything-Journey-Through/dp/B0DMHSQZ76"
   }
 ]

@@ -28,14 +28,18 @@ const itemVariants = {
 };
 
 export default function BooksWriting() {
-  const handleBookClick = (bookTitle: string) => {
+  const handleBookClick = (book: any) => {
     // Track analytics
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'click', {
         event_category: 'Book',
-        event_label: bookTitle,
+        event_label: book.title,
         value: 1
       });
+    }
+    // Open Amazon link in new tab
+    if (book.amazonUrl) {
+      window.open(book.amazonUrl, '_blank', 'noopener,noreferrer');
     }
   };
 
@@ -104,7 +108,7 @@ export default function BooksWriting() {
                   </div>
 
                   <Button
-                    onClick={() => handleBookClick(book.title)}
+                    onClick={() => handleBookClick(book)}
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                     size="sm"
                   >
