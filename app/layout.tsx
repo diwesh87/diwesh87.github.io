@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Sora } from 'next/font/google';
+import Script from 'next/script';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { Analytics } from '@vercel/analytics/react';
 import { Toaster } from '@/components/ui/sonner';
@@ -73,6 +74,32 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#10B9AE" />
         <link rel="apple-touch-icon" href="/icon-192x192.png" />
+        {/* GA4 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID || 'G-209MW550NR'}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID || 'G-209MW550NR'}', {
+              anonymize_ip: true,
+              send_page_view: true
+            });
+          `}
+        </Script>
+        {/* GTM */}
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID || 'GTM-WLQ52SWL'}');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -96,6 +123,15 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${sora.variable} font-inter antialiased`}>
+        {/* GTM NoScript */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID || 'GTM-WLQ52SWL'}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
