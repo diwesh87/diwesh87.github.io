@@ -1,0 +1,9 @@
+# Normalize line endings for text files
+* text=auto
+
+# Ensure XML and TXT (including sitemap/robots) use LF
+*.xml text eol=lf
+*.txt text eol=lf
+
+# Specific hint for sitemap
+sitemap.xml text eol=lf
