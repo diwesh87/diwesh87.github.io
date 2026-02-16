@@ -114,8 +114,16 @@ export default function Skills() {
                           {hasMore && (
                             <Badge 
                               variant="outline" 
-                              className="text-xs cursor-pointer hover:bg-primary/10 hover:border-primary/30 transition-colors"
+                              role="button"
+                              tabIndex={0}
+                              className="text-xs cursor-pointer hover:bg-primary/10 hover:border-primary/30 active:bg-primary/20 transition-colors select-none"
                               onClick={() => toggleTools(skill.name)}
+                              onKeyDown={(e) => {
+                                if (e.key === 'Enter' || e.key === ' ') {
+                                  e.preventDefault();
+                                  toggleTools(skill.name);
+                                }
+                              }}
                             >
                               {isExpanded ? 'Show less' : `+${skill.tools.length - 3} more`}
                             </Badge>
@@ -155,8 +163,16 @@ export default function Skills() {
                         {hasMore && (
                           <Badge 
                             variant="secondary" 
-                            className="text-xs cursor-pointer hover:bg-primary/20 transition-colors"
+                            role="button"
+                            tabIndex={0}
+                            className="text-xs cursor-pointer hover:bg-primary/20 active:bg-primary/30 transition-colors select-none"
                             onClick={() => toggleSupporting(category)}
+                            onKeyDown={(e) => {
+                              if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                toggleSupporting(category);
+                              }
+                            }}
                           >
                             {isExpanded ? 'Show less' : `+${skills.length - 3}`}
                           </Badge>
