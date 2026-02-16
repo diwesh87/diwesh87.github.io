@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Mic, ExternalLink, Calendar, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -94,14 +95,28 @@ export default function ResearchTalks() {
                     {item.abstract}
                   </p>
                   
-                  <Button
-                    onClick={() => handleTalkClick(item.title)}
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                    size="sm"
-                  >
-                    Read More
-                    <ExternalLink className="w-4 h-4 ml-2" />
-                  </Button>
+                  {item.url ? (
+                    <Button
+                      asChild
+                      onClick={() => handleTalkClick(item.title)}
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                      size="sm"
+                    >
+                      <Link href={item.url} target="_blank" rel="noopener noreferrer">
+                        Read More
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+                  ) : (
+                    <Button
+                      onClick={() => handleTalkClick(item.title)}
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                      size="sm"
+                    >
+                      Read More
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>

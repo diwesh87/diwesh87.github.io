@@ -2,12 +2,14 @@
   { 
     "slug": "mitigating-bias-recruitment", 
     "title": "Mitigating Bias in AI-Powered Recruitment", 
-    "abstract": "Techniques & evaluations to reduce bias in ranking & screening." 
+    "abstract": "Techniques & evaluations to reduce bias in ranking & screening.",
+    "url": "https://zenodo.org/records/15711521"
   },
   { 
     "slug": "talent-pools-to-talent-graphs", 
     "title": "From Talent Pools to Talent Graphs", 
-    "abstract": "Graph-driven discoverability in closed consultant networks." 
+    "abstract": "Graph-driven discoverability in closed consultant networks.",
+    "url": "https://zenodo.org/records/15854209"
   },
   { 
     "slug": "agentic-workflows-senior-living", 
