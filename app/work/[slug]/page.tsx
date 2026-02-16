@@ -1,10 +1,12 @@
 import { Metadata } from 'next';
+import Script from 'next/script';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { Callout } from '@/components/mdx/Callout';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { getCaseStudyBySlug, getAllCaseStudies } from '@/lib/work';
+import { getBreadcrumbStructuredData } from '@/lib/seo';
 
 interface CaseStudyPageProps {
   params: {
@@ -51,8 +53,58 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
     notFound();
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const articleUrl = `${baseUrl}/work/${study.slug}`;
+
+  // Article schema for case study
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": study.title,
+    "description": study.summary,
+    "author": {
+      "@type": "Person",
+      "name": "Diwesh Saxena",
+      "jobTitle": "CTO & AI Platform Architect"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Diwesh Saxena"
+    },
+    "datePublished": study.timeframe,
+    "about": study.stack.map(tech => ({
+      "@type": "Thing",
+      "name": tech
+    })),
+    "keywords": study.stack.join(", ")
+  };
+
+  const breadcrumbs = getBreadcrumbStructuredData([
+    { name: 'Home', url: baseUrl },
+    { name: 'Work', url: `${baseUrl}/work` },
+    { name: study.title, url: articleUrl }
+  ]);
+
   return (
     <>
+      {/* Breadcrumb Schema */}
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbs)
+        }}
+      />
+      
+      {/* Article Schema */}
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema)
+        }}
+      />
+      
       <Header />
       <main className="min-h-screen bg-background pt-16">
         <div className="container-width py-16">

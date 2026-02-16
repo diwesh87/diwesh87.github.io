@@ -1,9 +1,11 @@
 import { Metadata } from 'next';
+import Script from 'next/script';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import skillsData from '@/content/skills.json';
+import { getBreadcrumbStructuredData } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Services - Diwesh Saxena',
@@ -17,8 +19,66 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  
+  // Generate Service schema for each core service
+  const servicesSchema = skillsData.core.map(service => ({
+    "@type": "Service",
+    "name": service.name,
+    "description": service.oneLiner,
+    "provider": {
+      "@type": "Person",
+      "name": "Diwesh Saxena",
+      "jobTitle": "CTO & AI Platform Architect"
+    },
+    "serviceType": service.name,
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": service.name,
+      "itemListElement": service.outcomes.map((outcome, index) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": outcome
+        }
+      }))
+    }
+  }));
+
+  const breadcrumbs = getBreadcrumbStructuredData([
+    { name: 'Home', url: baseUrl },
+    { name: 'Services', url: `${baseUrl}/services` }
+  ]);
+
   return (
     <>
+      {/* Breadcrumb Schema */}
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbs)
+        }}
+      />
+      
+      {/* Services Schema */}
+      <Script
+        id="services-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": servicesSchema.map((service, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": service
+            }))
+          })
+        }}
+      />
+      
       <Header />
       <main className="min-h-screen bg-background pt-16">
         <div className="container-width py-16">

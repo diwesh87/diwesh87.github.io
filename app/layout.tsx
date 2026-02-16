@@ -5,6 +5,7 @@ import Script from 'next/script';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { Analytics } from '@vercel/analytics/react';
 import { Toaster } from '@/components/ui/sonner';
+import { getComprehensiveKeywords, getPersonStructuredData, getWebsiteStructuredData } from '@/lib/seo';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -18,10 +19,12 @@ const sora = Sora({
   display: 'swap'
 });
 
+const comprehensiveKeywords = getComprehensiveKeywords();
+
 export const metadata: Metadata = {
   title: 'Diwesh Saxena - CTO & AI Platform Architect',
   description: '16+ years building scalable platforms and AI-augmented workflows across HRTech, healthcare, IoT, and public sector.',
-  keywords: 'CTO, AI Platform Architect, Fractional CTO, AI Product Strategy, Cloud Architecture, Tech Leadership',
+  keywords: comprehensiveKeywords,
   authors: [{ name: 'Diwesh Saxena' }],
   creator: 'Diwesh Saxena',
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
@@ -100,25 +103,18 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID || 'GTM-WLQ52SWL'}');
           `}
         </Script>
+        {/* Person Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Diwesh Saxena",
-              "jobTitle": "CTO & AI Platform Architect",
-              "knowsAbout": [
-                "Fractional CTO",
-                "AI Product Strategy",
-                "Platform Architecture",
-                "Cloud & DevOps",
-                "Compliance & VAPT",
-                "Team Coaching"
-              ],
-              "url": process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-              "sameAs": ["https://www.linkedin.com/in/diweshsaxena/"]
-            })
+            __html: JSON.stringify(getPersonStructuredData())
+          }}
+        />
+        {/* Website Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getWebsiteStructuredData())
           }}
         />
       </head>
