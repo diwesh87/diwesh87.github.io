@@ -7,6 +7,7 @@ import Services from '@/components/home/services';
 import BooksWriting from '@/components/home/books-writing';
 import ResearchTalks from '@/components/home/research-talks';
 import Testimonials from '@/components/home/testimonials';
+import NewsletterFeed from '@/components/home/newsletter-feed';
 import FinalCTA from '@/components/home/final-cta';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
@@ -114,6 +115,7 @@ export default function Home() {
         <Services />
         <BooksWriting />
         <ResearchTalks />
+        <NewsletterFeed />
         <Testimonials />
         <FinalCTA />
       </main>
