@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import { Inter, Sora } from 'next/font/google';
 import Script from 'next/script';
 import { ThemeProvider } from '@/components/providers/theme-provider';
-import { Analytics } from '@vercel/analytics/react';
 import { Toaster } from '@/components/ui/sonner';
 import { getComprehensiveKeywords, getPersonStructuredData, getWebsiteStructuredData } from '@/lib/seo';
 
@@ -137,7 +136,6 @@ export default function RootLayout({
           {children}
           <Toaster />
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   );
