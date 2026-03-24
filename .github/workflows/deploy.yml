@@ -32,6 +32,8 @@ jobs:
         run: npm ci
         
       - name: Build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://diwesh87.github.io
         run: npm run build
         
       - name: Setup Pages
